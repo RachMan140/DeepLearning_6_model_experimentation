@@ -1,0 +1,8 @@
+# Core
+torch
+torchvision
+numpy
+matplotlib
+# Needed only for FID in run_evaluation.py
+torchmetrics
+torch-fidelity

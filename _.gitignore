@@ -1,0 +1,11 @@
+# downloaded dataset
+data/
+
+# trained weights are large; the small *_history.json files are kept
+checkpoints/*.pt
+
+# python / notebook clutter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
