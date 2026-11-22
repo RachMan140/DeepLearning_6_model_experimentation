@@ -10,7 +10,6 @@ Deep Learning take-home project: Vanilla Autoencoder, Sparse Autoencoder, Variat
 - **Dataset:** Fashion-MNIST (70,000 images, 28x28 grayscale, 10 classes), loaded with `torchvision`
 - **Framework:** PyTorch
 
-<!-- Add an acknowledgement line here if your course requires disclosing tool assistance. -->
 
 ## Standardized setup
 
