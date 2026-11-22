@@ -1,0 +1,37 @@
+{
+  "avg_epoch_time": 23.41836368560791,
+  "loss_G_mean_last": 2.410509661136355,
+  "loss_G_std_last": 0.10341739858790516,
+  "loss_D_mean_last": 0.6059226947631154,
+  "loss_D_std_last": 0.05375889186561338,
+  "loss_G_mean_abs_change": 0.041114523756772936,
+  "D_real_last": 0.8033300315311976,
+  "D_fake_last": 0.1962795560657978,
+  "diversity_real": 11.36983871459961,
+  "diversity_generated": 11.42751693725586,
+  "class_coverage": {
+    "counts": [
+      236,
+      212,
+      204,
+      156,
+      188,
+      180,
+      212,
+      176,
+      240,
+      196
+    ],
+    "classes_present": 10,
+    "entropy_ratio": 0.9965802565444386
+  },
+  "vanilla_gan_stability": {
+    "loss_G_mean_last": 0.9191072390590396,
+    "loss_G_std_last": 0.006904306162633895,
+    "loss_D_mean_last": 1.2775019053391048,
+    "loss_D_std_last": 0.002202232305944405,
+    "loss_G_mean_abs_change": 0.008576113421217856,
+    "D_real_last": 0.5528220974377224,
+    "D_fake_last": 0.44862739525522505
+  }
+}

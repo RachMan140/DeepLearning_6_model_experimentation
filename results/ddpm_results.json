@@ -1,0 +1,9 @@
+{
+  "unet_params": 2260289,
+  "T": 1000,
+  "avg_epoch_time": 57.77307542324066,
+  "test_noise_loss": 0.03374740333642278,
+  "latency_ms_batch64": 22848.614218000876,
+  "final_train_loss": 0.03584403530188969,
+  "final_val_loss": 0.03392471533800875
+}

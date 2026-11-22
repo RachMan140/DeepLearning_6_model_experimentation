@@ -1,0 +1,10 @@
+| Model | Latent dim | Train time/epoch (s) | Latency (ms/batch 64) | Test MSE | Test PSNR (dB) | Test SSIM | FID |
+|---|---|---|---|---|---|---|---|
+| Vanilla AE | 64 | 7.37 | 0.56 | 0.00651 | 22.99 | 0.7889 | N/A |
+| Sparse AE | 64 (bottleneck) / 256 (sparse) | 7.31 | 0.63 | 0.01115 | 20.49 | 0.6842 | N/A |
+| VAE | 64 | 7.65 | 0.41 | 0.01334 | 19.60 | 0.6454 | 87.00 |
+| Vanilla GAN | 100 (noise) | 9.56 | 0.64 | N/A | N/A | N/A | 101.20 |
+| DCGAN | 100 (noise) | 23.42 | 6.65 | N/A | N/A | N/A | 11.73 |
+| DDPM | 28x28 (image) | 57.77 | 22045.11 | N/A | N/A | N/A | 9.06 |
+
+FID reference floor (real train vs real test, n=5000): 4.50

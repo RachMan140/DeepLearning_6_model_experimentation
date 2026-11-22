@@ -1,0 +1,25 @@
+{
+  "avg_epoch_time": 9.563193855285645,
+  "final_loss_D": 1.2729998128073556,
+  "final_loss_G": 0.9128758897100177,
+  "final_D_real": 0.5528220974377224,
+  "final_D_fake": 0.44862739525522505,
+  "diversity_real": 11.36983871459961,
+  "diversity_generated": 11.014437675476074,
+  "class_coverage": {
+    "counts": [
+      240,
+      204,
+      200,
+      232,
+      184,
+      116,
+      224,
+      220,
+      160,
+      220
+    ],
+    "classes_present": 10,
+    "entropy_ratio": 0.9923306089560064
+  }
+}
