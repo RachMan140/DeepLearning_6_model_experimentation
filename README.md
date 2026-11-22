@@ -2,9 +2,7 @@
 
 # Comparing Six Generative Architectures on Fashion-MNIST
 
-**Experimentation between Vanilla AE, Sparse AE, VAE, Vanilla GAN, DCGAN, and DCPM models**
-
-Deep Learning take-home project: Vanilla Autoencoder, Sparse Autoencoder, Variational Autoencoder (VAE), Vanilla GAN, DCGAN and DDPM, all trained and evaluated under identical conditions, plus an experiment showing why a supervised MLP classifier cannot be reused for image generation.
+Deep Learning Experimentation between Vanilla Autoencoder, Sparse Autoencoder, Variational Autoencoder (VAE), Vanilla GAN, DCGAN and DDPM, all trained and evaluated under identical conditions, plus an experiment showing why a supervised MLP classifier cannot be reused for image generation.
 
 - **Author:** Farhan Faturachman Zidane Haristian  |  **Student ID (NIM):** 2802497302  |  **Class:** LA01
 - **Dataset:** Fashion-MNIST (70,000 images, 28x28 grayscale, 10 classes), loaded with `torchvision`
