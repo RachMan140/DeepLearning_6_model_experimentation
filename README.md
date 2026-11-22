@@ -30,25 +30,25 @@ A GPU is strongly recommended (the experiments were run on Google Colab: T4 GPU 
 
 ## Repository layout
 
-| File | Purpose |
-| `data.py` | Step 1: Seeding, device, Fashion-MNIST download, 80/10/10 split, DataLoaders |
-| `models.py` | Vanilla AE, Sparse AE, VAE, MLP classifier, frozen-latent decoder, Vanilla GAN, DCGAN |
-| `diffusion.py` | U-Net noise predictor, DDPM forward/reverse process, DDPM training loop |
-| `train.py` | Generic training loops (autoencoders, classifier, GANs), losses, evaluation, plotting helpers |
-| `metrics.py` | SSIM implemented in plain PyTorch |
-| `mlp_analysis.py` | Section 2 helpers: transposed-weight projection, weight diagnostics, latent sampling |
-| `gan_analysis.py` | Mode-coverage and diversity diagnostics for generated samples |
-| `run_vanilla_ae.py` | Step 2: train and evaluate the Vanilla AE |
-| `run_mlp_experiment.py` | Step 3: MLP classifier and the five-stage "classifiers cannot generate" experiment |
-| `run_sparse_ae.py` | Step 4: Sparse AE with a lambda sweep |
-| `plot_sparse_features.py` | Redraws hidden-unit templates using only active units |
-| `run_vae.py` | Step 5: VAE, Figure 1 and Figure 2 panel A |
-| `run_vanilla_gan.py` | Step 6: MLP GAN, Figure 2 panel B |
-| `run_dcgan.py` | Step 7: DCGAN, Figure 2 panel C |
-| `run_ddpm.py` | Step 8: DDPM, Figure 2 panel D and the denoising trajectory |
-| `run_evaluation.py` | Step 9: test metrics, latency, FID, compiled table |
-| `run_interpolation.py` | Figure 4: linear latent interpolation |
-| `make_fig5.py` | Figure 5: training curves and DDPM trajectory |
+| File | Purpose |\
+| `data.py` | Step 1: Seeding, device, Fashion-MNIST download, 80/10/10 split, DataLoaders |\
+| `models.py` | Vanilla AE, Sparse AE, VAE, MLP classifier, frozen-latent decoder, Vanilla GAN, DCGAN |\
+| `diffusion.py` | U-Net noise predictor, DDPM forward/reverse process, DDPM training loop |\
+| `train.py` | Generic training loops (autoencoders, classifier, GANs), losses, evaluation, plotting helpers |\
+| `metrics.py` | SSIM implemented in plain PyTorch |\
+| `mlp_analysis.py` | Section 2 helpers: transposed-weight projection, weight diagnostics, latent sampling |\
+| `gan_analysis.py` | Mode-coverage and diversity diagnostics for generated samples |\
+| `run_vanilla_ae.py` | Step 2: train and evaluate the Vanilla AE |\
+| `run_mlp_experiment.py` | Step 3: MLP classifier and the five-stage "classifiers cannot generate" experiment |\
+| `run_sparse_ae.py` | Step 4: Sparse AE with a lambda sweep |\
+| `plot_sparse_features.py` | Redraws hidden-unit templates using only active units |\
+| `run_vae.py` | Step 5: VAE, Figure 1 and Figure 2 panel A |\
+| `run_vanilla_gan.py` | Step 6: MLP GAN, Figure 2 panel B |\
+| `run_dcgan.py` | Step 7: DCGAN, Figure 2 panel C |\
+| `run_ddpm.py` | Step 8: DDPM, Figure 2 panel D and the denoising trajectory |\
+| `run_evaluation.py` | Step 9: test metrics, latency, FID, compiled table |\
+| `run_interpolation.py` | Figure 4: linear latent interpolation |\
+| `make_fig5.py` | Figure 5: training curves and DDPM trajectory |\
 | `assemble_figures.py` | Builds final Figures 2 and 3 from panel images |
 
 Generated folders: `checkpoints/`, `figures/` and `results/`.
@@ -76,12 +76,12 @@ Approximate training time per epoch on Colab: Vanilla AE / Sparse AE / VAE about
 
 ## Results (test set, seed 42, single run)
 
-| Model | Latent dim | Train time/epoch (s) | Latency (ms/batch 64) | Test MSE | Test PSNR (dB) | Test SSIM | FID |
-| Vanilla AE | 64 | 7.37 | 0.56 | 0.00651 | 22.99 | 0.7889 | N/A |
-| Sparse AE (lambda=1e-4) | 64 (bottleneck) / 256 (sparse) | 7.31 | 0.63 | 0.01115 | 20.49 | 0.6842 | N/A |
-| VAE | 64 | 7.65 | 0.41 | 0.01334 | 19.60 | 0.6454 | 87.00 |
-| Vanilla GAN | 100 (noise) | 9.56 | 0.64 | N/A | N/A | N/A | 101.20 |
-| DCGAN | 100 (noise) | 23.42 | 6.65 | N/A | N/A | N/A | 11.73 |
+| Model | Latent dim | Train time/epoch (s) | Latency (ms/batch 64) | Test MSE | Test PSNR (dB) | Test SSIM | FID |\
+| Vanilla AE | 64 | 7.37 | 0.56 | 0.00651 | 22.99 | 0.7889 | N/A |\
+| Sparse AE (lambda=1e-4) | 64 (bottleneck) / 256 (sparse) | 7.31 | 0.63 | 0.01115 | 20.49 | 0.6842 | N/A |\
+| VAE | 64 | 7.65 | 0.41 | 0.01334 | 19.60 | 0.6454 | 87.00 |\
+| Vanilla GAN | 100 (noise) | 9.56 | 0.64 | N/A | N/A | N/A | 101.20 |\
+| DCGAN | 100 (noise) | 23.42 | 6.65 | N/A | N/A | N/A | 11.73 |\
 | DDPM | 28x28 (image) | 57.77 | 22045.11 | N/A | N/A | N/A | 9.06 |
 
 
